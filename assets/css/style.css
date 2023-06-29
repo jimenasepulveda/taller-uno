@@ -1,12 +1,14 @@
 .cambiar-estilos{
     position: absolute;
     bottom: 1%;
-    right: 50%;
+    display: flex;
+    justify-content:center; 
+    align-items: center;
 }
 
 
-.cambiar-estilos input{
-    background-color: #4CAF50; /* Green */
+.cambiar-estilos__boton{
+    background: linear-gradient(135deg, #63e2ff, #fd6af1);
     border: none;
     color: white;
     padding: 10px 25px;
@@ -16,8 +18,182 @@
     font-size: 16px;
     cursor: pointer;
     transition: all ease-in-out 0.5s;
+    border-radius: 6px;
+    margin-right: 2px;
+    font-weight: bold;
 }
 
-.cambiar-estilos input:hover{
+.cambiar-estilos__boton:hover{
     color: black;
+    background: linear-gradient(135deg, #9ae1f1, #eb9ce4);;
+}
+/* -----------------//--------------- */
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+  
+.contenedor {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg,#e87ddf, #6dd5ed);
+}
+  
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 780px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+    padding: 3rem 0;
+    overflow: hidden;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+}
+  
+.form-container__header {
+    text-align: center;
+    margin: 30px;
+}
+  
+.header {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+  
+.form-container__social-icons {
+    display: flex;
+    justify-content: center;
+}
+  
+.form-container__social-icons a {
+    margin: 10px;
+}
+
+.form-container__social-icons a i{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    font-size: 30px;
+    color: black;
+}
+
+.form-container__social-icons a i:hover{
+    opacity: 0.8;
+}
+  
+.form-container__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 2.5rem;
+}
+  
+.form-container__text {
+    color: black;
+    margin-bottom: 10px;
+}
+  
+.form-container__input {
+    width: 100%;
+    height: 30px;
+    padding: 3px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+    border: 1px solid #ddd;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+}
+  
+.form-container__forgot-password {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+    transition: color 0.3s;
+}
+  
+.form-container__button {
+    width: 40%;
+    height: 30px;
+    background: linear-gradient(135deg, #6dd5ed, #e87ddf);
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+}
+  
+.form-container__button:hover {
+    background: linear-gradient(135deg, #9ae1f1, #eb9ce4);
+    color: black;
+}
+  
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+}
+  
+.overlay {
+    position: static;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    color: #fff;
+    background: linear-gradient(135deg, #61d6f0, #f850ea);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.overlay-panel {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 70px;
+}
+  
+.overlay-panel--right {
+    right: 0;
+}
+  
+.overlay-panel__header {
+    font-size: 25px;
+    color: #fff;
+}
+  
+.overlay-panel__description {
+    font-size: 15px;
+    color: #fff;
+    margin-top: 10px;
 }

@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Login</title>
-  </head>
-  <body>
-    <section class="cambiar-estilos">
-      <input type="button" value="Cambiar Estilo" />
-    </section>
 
-    <section>
-      <form action="">
-        <h1>Login</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Login</title>
+</head>
 
-        <section>
-          <a href="">Facebook</a>
-          <a href="">Twitter</a>
-        </section>
+<body>
+  <div id="contenedor">
+    <div class="cambiar-estilos">
+      <button class="cambiar-estilos__boton" onclick="cambiarEstilo()">Cambiar Estilos</button>
+    </div>
 
-        <form action="">
-          <p>or use your account</p>
-          <input type="email" />
-          <input type="password" />
-        </form>
+    <div id="container">
+      <form id="form-container">
+        <div id="form-container__header">
+          <h1 id="header">Login</h1>
+        </div>
 
-        <a href="">Forgot your password</a>
-        <input type="button" value="LOG IN" />
+
+        <div id="form-container__social-icons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+        <div id="form-container__content">
+          <p id="form-container__text">or use your account</p><br>
+          <input type="email" placeholder="email" id="form-container__input" required/>
+          <input type="password" placeholder="password" id="form-container__input2" required/>
+
+          <a href="" id="form-container__forgot-password">Forgot your password?</a>
+          <input type="button" value="LOG IN" id="form-container__button" />
+        </div>
       </form>
-    </section>
 
-    <section>
-      <h1>HTML CSS Login Form</h1>
+      <div id="overlay-container">
+        <div id="overlay">
+          <div id="overlay-panel">
+            <div id="overlay-panel--right">
+              <h1 id="overlay-panel__header">HTML CSS Login Form</h1>
 
-      <p>
-        This login form is created using pure HTML and CSS. For social icons
-        FontAwesome is used
-      </p>
-    </section>
-  </body>
+              <p id="overlay-panel__description">
+                This login form is created using pure HTML and CSS. For social icons
+                FontAwesome is used
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/e9685f6155.js" crossorigin="anonymous"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
